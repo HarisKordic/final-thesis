@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification with Explanation</title>
+</head>
+<body>
+    <h1>Image Classification with Grad-CAM Explanation</h1>
+    <div style="display: flex; justify-content: center;">
+        <div style="margin: 10px;">
+            <h2>Original Image</h2>
+            <img src="{{ original_image }}" alt="Original Image" style="max-width: 400px; max-height: 400px;">
+        </div>
+        <div style="margin: 10px;">
+            <h2>Grad-CAM Heatmap</h2>
+            <img src="{{ heatmap_image }}" alt="Heatmap Image" style="max-width: 400px; max-height: 400px;">
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="/">Upload another image</a>
+    </div>
+</body>
+</html>
