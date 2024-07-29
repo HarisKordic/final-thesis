@@ -48,7 +48,6 @@ def upload_file():
 @app.route('/uploads/<filename>', methods=['GET'])
 def uploaded_file(filename):
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    print(f"Serving file from: {file_path}")  # Debugging information
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+    return send_from_directory(f"../{app.config['UPLOAD_FOLDER']}", filename);
 
 
